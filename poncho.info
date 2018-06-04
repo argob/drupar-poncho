@@ -1,0 +1,48 @@
+name = Poncho
+description = Adapta Proyecto Poncho para Drupal
+core = 7.x
+base theme = bootstrap
+plugins[panels][layouts] = layouts
+
+
+dependencies[] = drupar_helpers
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[header1]    = 'Header left'
+regions[header2]    = 'Header right'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[footer1]        = 'Footer 1'
+regions[footer2]        = 'Footer 2'
+regions[footer3]        = 'Footer 3'
+regions[footer4]        = 'Footer 4'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = vendor/bootstrap/css/bootstrap.min.css
+stylesheets[all][] = css/poncho.min.css
+stylesheets[all][] = css/icono-arg.css
+stylesheets[all][] = css/argentina.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = vendor/bootstrap/js/bootstrap.min.js
+
+; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
+;settings[bootstrap_cdn] = 0
